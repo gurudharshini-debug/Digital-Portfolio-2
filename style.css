@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f8fb;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2f5a;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #ff9800;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0a2f5a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(10,47,90,0.7), rgba(10,47,90,0.7)),
+              url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 span {
+  color: #ff9800;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #e67e00;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #0a2f5a;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #f0f8ff;
+}
+
+/* Contact */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact a {
+  color: #0a2f5a;
+  text-decoration: none;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0a2f5a;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #08325a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0a2f5a;
+  color: #fff;
+  padding: 15px;
+}
+
+footer a {
+  color: #ff9800;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
